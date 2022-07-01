@@ -6,9 +6,16 @@
 Console.WriteLine("Программа выдает третью цифру числа введенного пользователем");
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-while (num < 100)
+
+int Third(int num)
 {
-    Console.Write("Tретьей цифры нет. Введите другое  число: ");
-    num = Convert.ToInt32(Console.ReadLine());
+    while (num >= 1000)
+    {
+        num = num / 10;
+    }
+    num = num % 10;
+    return num;
 }
-Console.WriteLine(num > 99 ? num.ToString()[2] : '-');
+
+if (num < 100) Console.Write("Третьей цифры нет");
+else Console.Write($"Третья цифра числа: {Third(num)}");
