@@ -12,5 +12,5 @@ while ( num < 100 || num > 999)
     Console.Write("Введено не трехзначное число. Введите трехзначное число: ");
     num = Convert.ToInt32(Console.ReadLine());
 }
-answer = num  10;
+answer = num % 10;
 Console.Write($"Вторая цифра числа {num}: {answer} ");
