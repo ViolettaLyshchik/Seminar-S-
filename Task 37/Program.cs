@@ -35,7 +35,7 @@ int[] MulArrElem(int[] array)
     {
         ResArr[i] = array[i] * array[array.Length - 1 - i];
     }
-    if (len % 2 != 0) ResArr[len - 1] = array[len - 1];
+    if (array.Length % 2 != 0) ResArr[len - 1] = array[len - 1];
     return ResArr;
 }
 
