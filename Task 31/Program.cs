@@ -9,7 +9,7 @@ int[] CreateArrayRndInt(int size, int begin, int end)
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rnd.Next(begin, end +1);
+        array[i] = rnd.Next(begin, end + 1);
 
     }
     return array;
@@ -30,8 +30,8 @@ int[] GetSumNegPosElem(int[] array)
             sumPos += array[i];
         }
     }
-        return new[] { sumNeg, sumPos };
-    
+    return new[] { sumNeg, sumPos };
+
 }
 
 void PrintArray(int[] array)
@@ -43,10 +43,19 @@ void PrintArray(int[] array)
         else Console.Write(array[i] + "]");
     }
 }
+
+void PrintSumNegPosElem(int[] sum)
+{
+    Console.WriteLine();
+    Console.WriteLine($"Сумма положительных чисел = {sum[1]}");
+    Console.WriteLine($"Сумма отрицательных чисел = {sum[0]}");
+}
 int[] resArray = CreateArrayRndInt(12, -9, 9);
 PrintArray(resArray);
 int[] sumNegPosElem = GetSumNegPosElem(resArray);
-Console.WriteLine();
-Console.WriteLine($"Сумма положительных чисел = {sumNegPosElem[1]}");
-Console.WriteLine($"Сумма отрицательных чисел = {sumNegPosElem[0]}");
+ 
+ PrintSumNegPosElem(sumNegPosElem);
+
+/*Console.WriteLine($"Сумма положительных чисел = {sumNegPosElem[1]}");
+Console.WriteLine($"Сумма отрицательных чисел = {sumNegPosElem[0]}");*/
 
