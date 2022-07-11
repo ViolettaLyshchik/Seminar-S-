@@ -17,7 +17,7 @@ int SumOddPos(int size, int min, int max)
 
         Console.Write(array[i] + " , ");
 
-        if (i % 2 != 1)
+        if (i % 2 != 0)
         {
             sumOddPos += array[i];
         }
@@ -25,6 +25,6 @@ int SumOddPos(int size, int min, int max)
     return sumOddPos;
 }
 
-int sumOddPos = SumOddPos(size, 1, 100);
+int sumOddPos = SumOddPos(size, 1, 10);
 
 Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях = {sumOddPos}");
