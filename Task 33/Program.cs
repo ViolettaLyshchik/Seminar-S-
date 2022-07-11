@@ -36,7 +36,7 @@ bool SearchElem(int[] array, int elem)
 
 void PrintRes(bool resSearch)
 {
-    string res =resSearch ? "Заданный элемент присутствует в массиве" : "Заданный элемент отсутствует в массиве";
+    string res = resSearch ? "Заданный элемент присутствует в массиве" : "Заданный элемент отсутствует в массиве";
     Console.WriteLine(res);
 }
 
@@ -51,8 +51,8 @@ int elem = Convert.ToInt32(Console.ReadLine());*/
 
 
 //int[] genarr = CreateArrayRndInt(insize, min, max);
-int[] arr = {6, 7, 19, 345, 3};
+int[] arr = { 6, 7, 19, 345, 3 };
 
 PrintArray(arr);
-bool resultSearch = SearchElem(arr, 2); 
+bool resultSearch = SearchElem(arr, 2);
 PrintRes(resultSearch);
