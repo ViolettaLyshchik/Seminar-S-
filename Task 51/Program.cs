@@ -44,6 +44,8 @@ void PrintMatrix(int[,] array)
 int SumDiagElem(int[,] array)
 {
     int sumDiagElem = 0;
+    int index = array.GetLength(0) > array.GetLength(1) ? 1 : 0;
+
     for (int i = 0; i < array.GetLength(0); i++)
     {
         {
