@@ -48,6 +48,16 @@ void OutputResponse(double[,] coef)
 InputCoef();
 OutputResponse(coef);
 
+/*Console.Write("Введите значение K1: ");
+double k1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите значение B1: ");
+double b1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите значение K2: ");
+double k2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите значение B2: ");
+double b2 = Convert.ToDouble(Console.ReadLine());
 
+ double x= (b2 - b1)/(k1 - k2);
+  Console.WriteLine($"Точка пересечения: {k1*x + b1}");*/
 
 
