@@ -16,7 +16,7 @@ double[,] GenMatrixRnd(int row, int col, int min, int max)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rnd.NextDouble()*10;
+            array[i, j] = new Random().NextDouble() * 20 - 10;
         }
     }
     return array;
