@@ -40,14 +40,14 @@ void PrintRes(bool resSearch)
     Console.WriteLine(res);
 }
 
-/*Console.Write("Введите расзмер массива: ");
+Console.Write("Введите расзмер массива: ");
 int insize = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите минимальное число диапазона: ");
 int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимальное число диапазона: ");
 int max = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите значение элемента для поиска: ");
-int elem = Convert.ToInt32(Console.ReadLine());*/
+int elem = Convert.ToInt32(Console.ReadLine());
 
 
 //int[] genarr = CreateArrayRndInt(insize, min, max);
