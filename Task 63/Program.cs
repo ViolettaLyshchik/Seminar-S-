@@ -4,8 +4,8 @@ N = 5 -> "1, 2, 3, 4, 5"
 N = 6 -> "1, 2, 3, 4, 5, 6"*/
 
 Console.Clear();
-Console.Write("Задайте число: ");
-int num = int.Parse(Console.ReadLine());
+Console.Write("Задайте число : ");
+int num= int.Parse(Console.ReadLine());
 NaturalNumber(num);
 void NaturalNumber(int num)
 {
