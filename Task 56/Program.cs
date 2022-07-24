@@ -55,7 +55,7 @@ int minSumLine = 0;
 int sumLine = SumLineElem(array, 0);
 for (int i = 1; i < array.GetLength(0); i++)
 {
-  int tempSumLine = SumLineElements(array, i);
+  int tempSumLine = SumLineElem(array, i);
   if (sumLine > tempSumLine)
   {
     sumLine = tempSumLine;
