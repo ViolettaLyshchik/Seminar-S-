@@ -8,23 +8,20 @@ Console.Write("Задайте число N: ");
 int n = int.Parse(Console.ReadLine());
 int sum=0;
 int temp = m;
-
-if (m > n)
+if (m > n) 
 {
-    m = n;
-    n = temp;
+  m = n; 
+  n = temp;
 }
-
-SumElements(m, n, temp=0);
-
-void SumElements(int m, int n, int sum)
+SummElem(m, n, sum);
+void SummElem(int m, int n, int sum)
 {
-    sum = sum + n;
-    if (n <= m)
-    {
-        Console.Write($"Сумма элементов= {sum} ");
-        return;
-    }
-    SumElements(m, n - 1, sum);
+  sum = sum + n;
+  if (n <= m)
+  {
+    Console.Write($"Сумма элементов= {sum} ");
+    return;
+  }
+  SummElem(m, n - 1, sum);
 }
 
